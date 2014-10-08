@@ -1,6 +1,6 @@
-<h3>Video Index</h3>
-<ul>
-<% @videos.each do |v| %>
-  <li>Title: <%= v.title %> - Author: <%= v.author.name %> - Link: <%=link_to v.title, v.url %> - Show: <%= link_to v.id, video_path(v) %></li>
-  <% end %>
-</ul>
+  <% provide(:title, "Video Index") %>
+  <ul>
+  <% @videos.each do |v| %>
+    <li>Title: <%= v.title %> - Author: <%= v.author.name %> - Link: <%=link_to v.title, v.url %> - Show: <%= link_to v.id, video_path(v) %></li>
+    <% end %>
+  </ul>

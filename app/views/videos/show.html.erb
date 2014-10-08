@@ -1,4 +1,4 @@
-<h3>Show Single Video</h3>
+<% provide(:title, "Show Single Video") %>
 <ul>
   <li>Title: <%= @video.title %> - Author: <%= @video.author.name %> - Link: <%=link_to @video.title, @video.url %></li>
 </ul>
