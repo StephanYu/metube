@@ -32,6 +32,12 @@ gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'figaro'
+
+gem 'rest-client', '~> 1.7.2'
+gem 'mime-types', '~> 2.4.1'
+gem 'netrc', '~> 0.7.7'
+gem 'rdoc', '~> 4.1.2'
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
@@ -46,5 +52,6 @@ group :development, :test do
   gem 'rspec-rails'
 
   gem 'pry-byebug'
+
 end
 
